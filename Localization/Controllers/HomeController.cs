@@ -1,7 +1,7 @@
-﻿using DotNetCoreLocalization.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using System.Diagnostics;
+using Localization.Models;
 
 namespace Localization.Controllers
 {

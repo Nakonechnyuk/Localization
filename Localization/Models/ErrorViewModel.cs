@@ -1,6 +1,4 @@
-using System;
-
-namespace DotNetCoreLocalization.Models
+namespace Localization.Models
 {
     public class ErrorViewModel
     {
