@@ -117,10 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FormatDate" xml:space="preserve">
+    <value>Date formate</value>
+  </data>
   <data name="Header" xml:space="preserve">
-    <value>header english</value>
+    <value>Hello Localization Test</value>
   </data>
   <data name="Message" xml:space="preserve">
-    <value>message english</value>
+    <value>Today is a good weather</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Big number</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="VolumeMeasurement" xml:space="preserve">
+    <value>Ounces</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="WeightMeasurement" xml:space="preserve">
+    <value>Pounds</value>
   </data>
 </root>
