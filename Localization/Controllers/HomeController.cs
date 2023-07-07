@@ -58,7 +58,7 @@ namespace Localization.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        private MeasurementSystem GetMeasurementSystem(CultureInfo cultureInfo)
+        private static MeasurementSystem GetMeasurementSystem(CultureInfo cultureInfo)
         {
             var culture = cultureInfo.Name;
 
@@ -75,7 +75,7 @@ namespace Localization.Controllers
             }
         }
 
-        private double ConvertWeight(double weight, MeasurementSystem measurementSystem)
+        private static double ConvertWeight(double weight, MeasurementSystem measurementSystem)
         {
             return measurementSystem switch
             {
@@ -85,13 +85,13 @@ namespace Localization.Controllers
             };
         }
 
-        private double KilogramsToPounds(double kilos)
+        private static double KilogramsToPounds(double kilos)
         {
             var convertedValue = kilos / 0.45359237;
             return Math.Round(convertedValue, 3);
         }
 
-        private double ConvertVolume(double volume, MeasurementSystem measurementSystem)
+        private static double ConvertVolume(double volume, MeasurementSystem measurementSystem)
         {
             return measurementSystem switch
             {
@@ -100,7 +100,7 @@ namespace Localization.Controllers
                 _ => volume,
             };
         }
-        private double LitresToFluidOunces(double litres)
+        private static double LitresToFluidOunces(double litres)
         {
             var convertedValue = litres * 33.8140226;
             return Math.Round(convertedValue, 3);
